@@ -1,0 +1,63 @@
+<!-- Your HTML and Liquid tags go here -->
+
+
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>{{ page.title }}</title>
+    <link rel="icon" type="image/x-icon" href="{{ '/_assets/favicon.ico' | relative_url }}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+
+<body>
+    <div class="container-xl mx-auto">
+        <header>
+            <h1 class="syllabus-title">COM-301 New Media Maps</h1>
+        </header>
+        <div class="row">
+            <div class="col course-links">
+                <h3>Course Links</h3>
+                <ul class="nav flex-column justify-items-end">
+                    <li class="nav-item">
+                        <a class="nav-link {% if page.url == '/' %}active{% endif %}" aria-current="page" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link {% if page.url == '/syllabus.html' %}active{% endif %}" href="/syllabus.html">Syllabus</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link {% if page.url == '/software.html' %}active{% endif %}" href="/software.html">Tech & Software</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-6">
+                {{ content }}
+            </div>
+            <div class="col about-course">
+                <h4>Title</h4>
+                <p>Spring 2024: New Media Maps</p>
+                <h4>Room</h4>
+                <p>Gallagher 204</p>
+                <h4>Date / Time</h4>
+                <p><b>Monday:</b> 11am-12:30pm</p>
+                <p><b>Wednesday:</b> 11am-12:30pm</p>
+                <h4>Instructors</h4>
+                <ul>
+                    <li>John Drew</li>
+                    <li>Matthew X. Curinga</li>
+                    <li>Suraj Uttamchandani</li>
+                </ul>
+            </div>
+        </div>
+        <footer>
+            {% include license.html %}
+        </footer>
+
+        
+    </div>
+</body>
+
+</html>

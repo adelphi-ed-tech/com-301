@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&display=swap');
+
+
+body {
+    background-color: #FFE5E5;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+    color: #916DB3;
+}
+
+.syllabus-title {
+    font-family: 'Agbalumo';
+    font-size: 64px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    padding: 0 2em;
+
+}
+.course-links {
+    text-align: right;
+}

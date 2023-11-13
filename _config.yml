@@ -1,0 +1,27 @@
+title: "COM-301: Multimedia Maps"
+email: mcuringa@adelphi.edu
+description: >- 
+   Syllabus for Adelphi University's COM-301: Multimedia Maps course.
+baseurl: "" # the subpath of your site, e.g. /blog
+# url: "" # the base hostname & protocol for your site, e.g. http://example.com
+# github_username:  mcuringa
+
+
+exclude:
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - .tailwind.config.js
+  - .gitignore
+  - .jekyll-cache
+  - .sass-cache/
+  - .jekyll-cache/
+  - com-301.code-workspace
+
+include:
+  - _assets
